@@ -1,0 +1,61 @@
+[
+  {
+    "id": "01_h",
+    "path": "data/retinal-smoke/01_h.png",
+    "source_member": "01_h.jpg",
+    "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy.zip",
+    "archive_sha256": "a4ce863b87371cecca8c841c4f7d8b06e39c5298fc78b103c35781bdb7eff389",
+    "sha256": "982bb82ad1af13b890d198a84fb4764f0bed5d39c2df9a2b846697165a9edb0f",
+    "license": "CC BY 4.0",
+    "source_group": "healthy",
+    "ground_truth_dr_grade": null,
+    "transformation": "Lossless RGB PNG re-encoding; original dimensions retained"
+  },
+  {
+    "id": "02_h",
+    "path": "data/retinal-smoke/02_h.png",
+    "source_member": "02_h.jpg",
+    "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy.zip",
+    "archive_sha256": "a4ce863b87371cecca8c841c4f7d8b06e39c5298fc78b103c35781bdb7eff389",
+    "sha256": "b2a4858009b050d8f82c2426a7c0a248a56606a3a11658237a1df78407d6be9a",
+    "license": "CC BY 4.0",
+    "source_group": "healthy",
+    "ground_truth_dr_grade": null,
+    "transformation": "Lossless RGB PNG re-encoding; original dimensions retained"
+  },
+  {
+    "id": "01_dr",
+    "path": "data/retinal-smoke/01_dr.png",
+    "source_member": "01_dr.JPG",
+    "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/diabetic_retinopathy.zip",
+    "archive_sha256": "278630bea52c2096dbfa4b6486647ea60e56db1d67f1308dab2ff4383481a244",
+    "sha256": "b61d676db9f085242b835d7839f54621ca097cef7799a26d3c35eaf07cbc79b9",
+    "license": "CC BY 4.0",
+    "source_group": "diabetic_retinopathy",
+    "ground_truth_dr_grade": null,
+    "transformation": "Lossless RGB PNG re-encoding; original dimensions retained"
+  },
+  {
+    "id": "02_dr",
+    "path": "data/retinal-smoke/02_dr.png",
+    "source_member": "02_dr.JPG",
+    "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/diabetic_retinopathy.zip",
+    "archive_sha256": "278630bea52c2096dbfa4b6486647ea60e56db1d67f1308dab2ff4383481a244",
+    "sha256": "5477f82ca0bb514fb5e545bb3bee704a429741b52d57644e26305a537ddb3284",
+    "license": "CC BY 4.0",
+    "source_group": "diabetic_retinopathy",
+    "ground_truth_dr_grade": null,
+    "transformation": "Lossless RGB PNG re-encoding; original dimensions retained"
+  },
+  {
+    "id": "normal-left",
+    "path": "data/retinal-smoke/normal-left.jpg",
+    "source_url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.19.3/skimage/data/retina.jpg",
+    "original_source": "https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_left_eye.jpg",
+    "sha256": "38a07f36f27f095e818aea7b96d34202c05176d30253c66733f2e00379e9e0e6",
+    "license": "CC0 1.0",
+    "source_group": "described as normal by photographer",
+    "ground_truth_dr_grade": null,
+    "transformation": "None"
+  }
+]

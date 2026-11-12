@@ -1,0 +1,32 @@
+{
+  "site": "https://baseera-five.vercel.app/",
+  "comparison": "Production build from source matches all deployed public files byte for byte; Netlify-only _redirects excluded.",
+  "public_files": [
+    {
+      "path": "api-disabled.json",
+      "sha256": "4b522589b910b533ebb4757c8a3e55f98ea1cab41bae3a1b691598a393bf8405",
+      "matches_public": true
+    },
+    {
+      "path": "assets/baseera-glasses-concept-v1.png",
+      "sha256": "ef3600e670ee392de90d004873cea006ca018d3173a4cfcac8fd835a89302fed",
+      "matches_public": true
+    },
+    {
+      "path": "assets/index-0THdqCep.css",
+      "sha256": "c333bf9bc9f6b4405eaf9a7f425f26c35c058d1cf071ed90309ce836a3bf4bf8",
+      "matches_public": true
+    },
+    {
+      "path": "assets/index-CE3ns7VB.js",
+      "sha256": "0bc3cb25ef89d0787dfa7d71f9236cdde4252c26fb428378eb263e7ea8e6a4aa",
+      "matches_public": true
+    },
+    {
+      "path": "index.html",
+      "sha256": "2c4f03d7a6a77ce9d89c668e77ba1e7f360c7612cb540b5fa1a035a818c14483",
+      "matches_public": true
+    }
+  ],
+  "inference_status": 403
+}

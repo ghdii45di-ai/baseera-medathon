@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "routes": [
+    { "src": "/api(?:/.*)?", "dest": "/api-disabled.json", "status": 403, "headers": { "Content-Type": "application/json", "Cache-Control": "no-store" } },
+    { "handle": "filesystem" },
+    { "src": "/(?:app(?:/.*)?|research/?|device-demo/?)", "dest": "/index.html" }
+  ]
+}

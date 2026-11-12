@@ -1,0 +1,276 @@
+{
+  "test_type": "real_retinal_execution_case_series_not_accuracy_evaluation",
+  "date": "2026-11-13",
+  "model": {
+    "ready": true,
+    "state": "ready",
+    "mode": "live_research_inference",
+    "reason": null,
+    "name": "Aldahmashi/DR-EfficientNetB0",
+    "version": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+    "task": "five_class_diabetic_retinopathy_grading",
+    "classes": [
+      "No DR",
+      "Mild",
+      "Moderate",
+      "Severe",
+      "Proliferative"
+    ],
+    "load_seconds": 47.662,
+    "retina_detector": false,
+    "clinically_validated": false
+  },
+  "runs": [
+    {
+      "id": "01_h",
+      "path": "data/retinal-smoke/01_h.png",
+      "source_member": "01_h.jpg",
+      "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy.zip",
+      "archive_sha256": "a4ce863b87371cecca8c841c4f7d8b06e39c5298fc78b103c35781bdb7eff389",
+      "sha256": "982bb82ad1af13b890d198a84fb4764f0bed5d39c2df9a2b846697165a9edb0f",
+      "license": "CC BY 4.0",
+      "source_group": "healthy",
+      "ground_truth_dr_grade": null,
+      "transformation": "Lossless RGB PNG re-encoding; original dimensions retained",
+      "checks": {
+        "width": 3504,
+        "height": 2336,
+        "brightness": 87.54,
+        "sharpness": 130.42,
+        "method": "grayscale_256_laplacian_variance_v1",
+        "checked_at": "2026-11-12T21:15:37.085142+00:00"
+      },
+      "predictions": [
+        {
+          "kind": "research_model_prediction",
+          "grade": 0,
+          "class_name": "No DR",
+          "model_name": "Aldahmashi/DR-EfficientNetB0",
+          "model_version": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+          "task": "five_class_diabetic_retinopathy_grading",
+          "analysis_at": "2026-11-12T21:15:38.054348+00:00",
+          "inference_ms": 536.22,
+          "input_sha256": "f2f86c8630ed54e4017fd658c8eaad685231211d14358d42e8194fe8bcbca892",
+          "calibrated": false,
+          "clinically_validated": false
+        },
+        {
+          "kind": "research_model_prediction",
+          "grade": 0,
+          "class_name": "No DR",
+          "model_name": "Aldahmashi/DR-EfficientNetB0",
+          "model_version": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+          "task": "five_class_diabetic_retinopathy_grading",
+          "analysis_at": "2026-11-12T21:15:39.111130+00:00",
+          "inference_ms": 510.67,
+          "input_sha256": "f2f86c8630ed54e4017fd658c8eaad685231211d14358d42e8194fe8bcbca892",
+          "calibrated": false,
+          "clinically_validated": false
+        }
+      ],
+      "repeat_class_equal": true
+    },
+    {
+      "id": "02_h",
+      "path": "data/retinal-smoke/02_h.png",
+      "source_member": "02_h.jpg",
+      "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy.zip",
+      "archive_sha256": "a4ce863b87371cecca8c841c4f7d8b06e39c5298fc78b103c35781bdb7eff389",
+      "sha256": "b2a4858009b050d8f82c2426a7c0a248a56606a3a11658237a1df78407d6be9a",
+      "license": "CC BY 4.0",
+      "source_group": "healthy",
+      "ground_truth_dr_grade": null,
+      "transformation": "Lossless RGB PNG re-encoding; original dimensions retained",
+      "checks": {
+        "width": 3504,
+        "height": 2336,
+        "brightness": 89.54,
+        "sharpness": 146.94,
+        "method": "grayscale_256_laplacian_variance_v1",
+        "checked_at": "2026-11-12T21:15:39.660777+00:00"
+      },
+      "predictions": [
+        {
+          "kind": "research_model_prediction",
+          "grade": 0,
+          "class_name": "No DR",
+          "model_name": "Aldahmashi/DR-EfficientNetB0",
+          "model_version": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+          "task": "five_class_diabetic_retinopathy_grading",
+          "analysis_at": "2026-11-12T21:15:40.484301+00:00",
+          "inference_ms": 445.77,
+          "input_sha256": "8127afe62cb1cebb04d6f540470532daa6f8a85f051116504467afa80d19197c",
+          "calibrated": false,
+          "clinically_validated": false
+        },
+        {
+          "kind": "research_model_prediction",
+          "grade": 0,
+          "class_name": "No DR",
+          "model_name": "Aldahmashi/DR-EfficientNetB0",
+          "model_version": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+          "task": "five_class_diabetic_retinopathy_grading",
+          "analysis_at": "2026-11-12T21:15:41.405714+00:00",
+          "inference_ms": 442.74,
+          "input_sha256": "8127afe62cb1cebb04d6f540470532daa6f8a85f051116504467afa80d19197c",
+          "calibrated": false,
+          "clinically_validated": false
+        }
+      ],
+      "repeat_class_equal": true
+    },
+    {
+      "id": "01_dr",
+      "path": "data/retinal-smoke/01_dr.png",
+      "source_member": "01_dr.JPG",
+      "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/diabetic_retinopathy.zip",
+      "archive_sha256": "278630bea52c2096dbfa4b6486647ea60e56db1d67f1308dab2ff4383481a244",
+      "sha256": "b61d676db9f085242b835d7839f54621ca097cef7799a26d3c35eaf07cbc79b9",
+      "license": "CC BY 4.0",
+      "source_group": "diabetic_retinopathy",
+      "ground_truth_dr_grade": null,
+      "transformation": "Lossless RGB PNG re-encoding; original dimensions retained",
+      "checks": {
+        "width": 3504,
+        "height": 2336,
+        "brightness": 85.39,
+        "sharpness": 80.28,
+        "method": "grayscale_256_laplacian_variance_v1",
+        "checked_at": "2026-11-12T21:15:41.889309+00:00"
+      },
+      "predictions": [
+        {
+          "kind": "research_model_prediction",
+          "grade": 0,
+          "class_name": "No DR",
+          "model_name": "Aldahmashi/DR-EfficientNetB0",
+          "model_version": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+          "task": "five_class_diabetic_retinopathy_grading",
+          "analysis_at": "2026-11-12T21:15:42.652224+00:00",
+          "inference_ms": 422.61,
+          "input_sha256": "1e5d6852839c4b53329bb558df0428a772f0a948723c4ffb37183b62d0c63950",
+          "calibrated": false,
+          "clinically_validated": false
+        },
+        {
+          "kind": "research_model_prediction",
+          "grade": 0,
+          "class_name": "No DR",
+          "model_name": "Aldahmashi/DR-EfficientNetB0",
+          "model_version": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+          "task": "five_class_diabetic_retinopathy_grading",
+          "analysis_at": "2026-11-12T21:15:43.531021+00:00",
+          "inference_ms": 434.59,
+          "input_sha256": "1e5d6852839c4b53329bb558df0428a772f0a948723c4ffb37183b62d0c63950",
+          "calibrated": false,
+          "clinically_validated": false
+        }
+      ],
+      "repeat_class_equal": true
+    },
+    {
+      "id": "02_dr",
+      "path": "data/retinal-smoke/02_dr.png",
+      "source_member": "02_dr.JPG",
+      "source_url": "https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/diabetic_retinopathy.zip",
+      "archive_sha256": "278630bea52c2096dbfa4b6486647ea60e56db1d67f1308dab2ff4383481a244",
+      "sha256": "5477f82ca0bb514fb5e545bb3bee704a429741b52d57644e26305a537ddb3284",
+      "license": "CC BY 4.0",
+      "source_group": "diabetic_retinopathy",
+      "ground_truth_dr_grade": null,
+      "transformation": "Lossless RGB PNG re-encoding; original dimensions retained",
+      "checks": {
+        "width": 3504,
+        "height": 2336,
+        "brightness": 80.13,
+        "sharpness": 98.18,
+        "method": "grayscale_256_laplacian_variance_v1",
+        "checked_at": "2026-11-12T21:15:44.039388+00:00"
+      },
+      "predictions": [
+        {
+          "kind": "research_model_prediction",
+          "grade": 0,
+          "class_name": "No DR",
+          "model_name": "Aldahmashi/DR-EfficientNetB0",
+          "model_version": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+          "task": "five_class_diabetic_retinopathy_grading",
+          "analysis_at": "2026-11-12T21:15:44.844582+00:00",
+          "inference_ms": 447.33,
+          "input_sha256": "e5efea3fb903fde28f368b02a8006c5b08047b0c41441974f494f2fb77bb9b7e",
+          "calibrated": false,
+          "clinically_validated": false
+        },
+        {
+          "kind": "research_model_prediction",
+          "grade": 0,
+          "class_name": "No DR",
+          "model_name": "Aldahmashi/DR-EfficientNetB0",
+          "model_version": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+          "task": "five_class_diabetic_retinopathy_grading",
+          "analysis_at": "2026-11-12T21:15:45.735713+00:00",
+          "inference_ms": 438.93,
+          "input_sha256": "e5efea3fb903fde28f368b02a8006c5b08047b0c41441974f494f2fb77bb9b7e",
+          "calibrated": false,
+          "clinically_validated": false
+        }
+      ],
+      "repeat_class_equal": true
+    },
+    {
+      "id": "normal-left",
+      "path": "data/retinal-smoke/normal-left.jpg",
+      "source_url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.19.3/skimage/data/retina.jpg",
+      "original_source": "https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_left_eye.jpg",
+      "sha256": "38a07f36f27f095e818aea7b96d34202c05176d30253c66733f2e00379e9e0e6",
+      "license": "CC0 1.0",
+      "source_group": "described as normal by photographer",
+      "ground_truth_dr_grade": null,
+      "transformation": "None",
+      "checks": {
+        "width": 1411,
+        "height": 1411,
+        "brightness": 90.27,
+        "sharpness": 216.77,
+        "method": "grayscale_256_laplacian_variance_v1",
+        "checked_at": "2026-11-12T21:15:45.835686+00:00"
+      },
+      "predictions": [
+        {
+          "kind": "research_model_prediction",
+          "grade": 0,
+          "class_name": "No DR",
+          "model_name": "Aldahmashi/DR-EfficientNetB0",
+          "model_version": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+          "task": "five_class_diabetic_retinopathy_grading",
+          "analysis_at": "2026-11-12T21:15:46.253571+00:00",
+          "inference_ms": 387.2,
+          "input_sha256": "3670e389d0dae9f755cc1bb7e4da4c3d2cdf10eba2dc3060836d8d4b8024d860",
+          "calibrated": false,
+          "clinically_validated": false
+        },
+        {
+          "kind": "research_model_prediction",
+          "grade": 0,
+          "class_name": "No DR",
+          "model_name": "Aldahmashi/DR-EfficientNetB0",
+          "model_version": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+          "task": "five_class_diabetic_retinopathy_grading",
+          "analysis_at": "2026-11-12T21:15:46.685642+00:00",
+          "inference_ms": 381.52,
+          "input_sha256": "3670e389d0dae9f755cc1bb7e4da4c3d2cdf10eba2dc3060836d8d4b8024d860",
+          "calibrated": false,
+          "clinically_validated": false
+        }
+      ],
+      "repeat_class_equal": true
+    }
+  ],
+  "limitations": [
+    "Five selected photographs, not a random or held-out cohort.",
+    "HRF source groups are not five-class DR severity grades.",
+    "Expert five-class labels and training-overlap checks are absent.",
+    "No accuracy, sensitivity, specificity or clinical validation established.",
+    "Basic measurements do not validate retinal gradability."
+  ]
+}

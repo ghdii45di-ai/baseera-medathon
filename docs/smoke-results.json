@@ -1,0 +1,76 @@
+{
+  "test_type": "synthetic_execution_smoke_only",
+  "retinal_images_tested": 0,
+  "labeled_evaluation_count": 0,
+  "model": {
+    "repo_id": "Aldahmashi/DR-EfficientNetB0",
+    "revision": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+    "filename": "final_model.keras",
+    "sha256": "e7aa6b69911a2a913a03a6a5669bb7aaeb6bf8f8c81a2a3d92aa2420e5d297d8",
+    "size_bytes": 33436274,
+    "license_declared": "MIT (model-card metadata; no standalone LICENSE file)",
+    "author": "Nasser Aldahmashi",
+    "classes": [
+      "No DR",
+      "Mild",
+      "Moderate",
+      "Severe",
+      "Proliferative"
+    ],
+    "task": "five_class_diabetic_retinopathy_grading",
+    "preprocessing": "PIL RGB, EXIF orientation applied by decoder, resize 224x224 BICUBIC, float32 raw 0..255; all rescaling and normalization embedded in checkpoint",
+    "training_data_declared": "APTOS 2019; exact split membership not published",
+    "clinical_validation": false
+  },
+  "load_seconds": 12.424,
+  "parameters": 4055976,
+  "runs": [
+    {
+      "synthetic_constant_rgb": 0,
+      "predicted_grade": 0,
+      "class_name": "No DR",
+      "repeat_equal": true
+    },
+    {
+      "synthetic_constant_rgb": 128,
+      "predicted_grade": 0,
+      "class_name": "No DR",
+      "repeat_equal": true
+    },
+    {
+      "synthetic_constant_rgb": 255,
+      "predicted_grade": 0,
+      "class_name": "No DR",
+      "repeat_equal": true
+    }
+  ],
+  "warm_inference_ms": [
+    415.94,
+    369.65,
+    397.48,
+    374.64,
+    392.3,
+    381.85
+  ],
+  "median_warm_ms": 387.07500000000005,
+  "rss_after_mb": 333.55,
+  "sampled_peak_rss_mb": 390.6,
+  "normalization_weights": [
+    [
+      0.48500001430511475,
+      0.4560000002384186,
+      0.4059999883174896
+    ],
+    [
+      0.2290000021457672,
+      0.2240000069141388,
+      0.22499999403953552
+    ],
+    0
+  ],
+  "runtime": {
+    "python": "3.13.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "limitations": "Generated constant RGB images verify execution only. No medical accuracy or retinal-image workflow is established."
+}

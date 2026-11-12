@@ -1,0 +1,14 @@
+{
+  "repo_id": "Aldahmashi/DR-EfficientNetB0",
+  "revision": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+  "filename": "final_model.keras",
+  "sha256": "e7aa6b69911a2a913a03a6a5669bb7aaeb6bf8f8c81a2a3d92aa2420e5d297d8",
+  "size_bytes": 33436274,
+  "license_declared": "MIT (model-card metadata; no standalone LICENSE file)",
+  "author": "Nasser Aldahmashi",
+  "classes": ["No DR", "Mild", "Moderate", "Severe", "Proliferative"],
+  "task": "five_class_diabetic_retinopathy_grading",
+  "preprocessing": "PIL RGB, EXIF orientation applied by decoder, resize 224x224 BICUBIC, float32 raw 0..255; all rescaling and normalization embedded in checkpoint",
+  "training_data_declared": "APTOS 2019; exact split membership not published",
+  "clinical_validation": false
+}

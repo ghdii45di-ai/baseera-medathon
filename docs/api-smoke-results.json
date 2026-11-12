@@ -1,0 +1,74 @@
+{
+  "test_type": "synthetic_http_execution_only",
+  "retinal_images": 0,
+  "input": "Generated 256x256 constant RGB (128,128,128) PNG",
+  "checks": {
+    "width": 256,
+    "height": 256,
+    "brightness": 128.0,
+    "sharpness": 0.0,
+    "method": "grayscale_256_laplacian_variance_v1",
+    "checked_at": "2026-11-12T18:24:07.582347+00:00"
+  },
+  "predictions": [
+    {
+      "kind": "research_model_prediction",
+      "grade": 0,
+      "class_name": "No DR",
+      "model_name": "Aldahmashi/DR-EfficientNetB0",
+      "model_version": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+      "task": "five_class_diabetic_retinopathy_grading",
+      "analysis_at": "2026-11-12T18:24:07.984206+00:00",
+      "inference_ms": 397.87,
+      "input_sha256": "83ab53863cf746efe2611c6b521cfbdefba4f5325cf123ab451c385035b394ef",
+      "calibrated": false,
+      "clinically_validated": false
+    },
+    {
+      "kind": "research_model_prediction",
+      "grade": 0,
+      "class_name": "No DR",
+      "model_name": "Aldahmashi/DR-EfficientNetB0",
+      "model_version": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+      "task": "five_class_diabetic_retinopathy_grading",
+      "analysis_at": "2026-11-12T18:24:08.409830+00:00",
+      "inference_ms": 410.27,
+      "input_sha256": "83ab53863cf746efe2611c6b521cfbdefba4f5325cf123ab451c385035b394ef",
+      "calibrated": false,
+      "clinically_validated": false
+    }
+  ],
+  "health": {
+    "ok": true,
+    "model": {
+      "ready": true,
+      "state": "ready",
+      "mode": "live_research_inference",
+      "reason": null,
+      "name": "Aldahmashi/DR-EfficientNetB0",
+      "version": "fb8d14c59bd56aa17fe0dfdea04a83ecd2f2eeac",
+      "task": "five_class_diabetic_retinopathy_grading",
+      "classes": [
+        "No DR",
+        "Mild",
+        "Moderate",
+        "Severe",
+        "Proliferative"
+      ],
+      "load_seconds": 53.756,
+      "retina_detector": false,
+      "clinically_validated": false
+    },
+    "retention": "request_only"
+  },
+  "repeat_class_equal": true,
+  "production_route_statuses": {
+    "/": 200,
+    "/app/cases/DEMO-001": 200,
+    "/research": 200,
+    "/api/missing": 404,
+    "/assets/missing.js": 404
+  },
+  "server_rss_mb": 351.73,
+  "server_peak_working_set_mb": 408.79
+}

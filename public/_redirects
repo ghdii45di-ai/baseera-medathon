@@ -1,0 +1,2 @@
+/api/*  /api-disabled.json  404!
+/*      /index.html         200
