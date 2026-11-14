@@ -5,6 +5,13 @@ export const DEMO_STORAGE_KEY='baseera-public-simulation-v1';
 export const SCENARIOS=['unflagged','flagged','unavailable'] as const;
 export type Scenario=typeof SCENARIOS[number];
 export type DemoState={c:Case;stage:'capture'|'review'|'report';scenario:Scenario|null;reportDate?:string};
+export function savedDemo(raw:string|null):{exists:boolean;canResume:boolean;state:DemoState}{
+ try{
+  const value=JSON.parse(raw||'null');
+  const valid=value?.c?.id==='SIM-001'&&['capture','review','report'].includes(value.stage)&&typeof value.c.workflow==='object'&&value.c.workflow!==null;
+  return {exists:raw!==null,canResume:!!valid,state:valid?restoreDemo(raw):freshDemo()};
+ }catch{return {exists:raw!==null,canResume:false,state:freshDemo()};}
+}
 export function freshDemo():DemoState{return {c:metadataOnly({id:'SIM-001',date:today(),eyes:['right','left'],notes:'',workflow:{stage:'input',source:'simulation',eye:'right',simulationStep:0,alignment:20,simulationComplete:false}}),stage:'capture',scenario:null};}
 export function scenarioId(value:unknown):Scenario|null {
  if(typeof value==='number'&&Number.isInteger(value))return SCENARIOS[value]??null; // v1 saved indices

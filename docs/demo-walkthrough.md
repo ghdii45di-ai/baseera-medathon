@@ -2,27 +2,27 @@
 
 ## English
 
-1. Select **Try the simulation**. The default is simulated capture; no account, image or backend is required.
+1. Select **Try the interactive demo**. Begin at preparation. If progress is saved, choose **Resume previous demo** or **Start new demo**; loading the page never silently discards it. No account, image or backend is required.
 2. Continue through fictional preparation, choose an eye, center the alignment slider, and select **Simulate capture**. The animation captures no photograph and does not measure retinal alignment.
-3. Select **Continue to scenario selection**. The original retinal illustration is labelled **Illustrative image — not captured or analyzed**; it does not determine the result. Choose no feature flagged, fictional feature flagged for specialist review, or assessment unavailable. Nothing is inferred from an image.
-4. Select **View simulation report**. The selected predefined outcome is at the top, followed by its own explanation, case/eye/date/scenario and an illustrative next step. One short section explains the limits: no capture or analysis, no technical checks or validated retinal-quality assessment, and disabled inference. The unavailable scenario gives no result or reassurance and offers **Retry simulated capture**, preserving the eye.
-5. Print / Save PDF in either language, or choose **Change scenario**. Progress buttons and Previous allow back navigation; report access requires completed simulated capture and a selection. Refresh restores the selected scenario/eye/report, including older numeric scenario records. Restart clears the scenario and completion flag. Local research cases remain untouched.
-6. The Research page preserves the honest evaluation finding: all five real retinal images were predicted class 0, including both HRF DR-group images. The simulation outcomes are unrelated to those predictions.
+3. Select **Continue to example selection**. The original retinal illustration is labelled **Illustrative image — not captured by the glasses or analyzed in the demo.** Choose **Example: nothing flagged for review**, **Example: flagged for specialist review**, or **Example: assessment unavailable**.
+4. Select **View simulation report**. The selected predefined example is at the top, followed by its explanation, case/eye/date/scenario and an illustrative next step. The screen and printed report state that it is not a screening result and that no image was captured or analyzed. The unavailable example offers **Retry the simulation**, preserving the eye.
+5. Print / Save PDF in either language, or choose **Change example**. Progress buttons and Previous allow back navigation. On refresh, explicitly resume the saved scenario/eye/report, including older numeric scenario records, or start a new demo. Starting new clears the previous result only after that choice. Local research cases remain untouched.
+6. **Progress & sources** is a concise visitor overview. The original model/data experiment findings are preserved in technical documentation indexed by RESEARCH.md. They do not generate the predefined demo examples.
 
 The public app has no upload control or inference/image-check requests. Local research uses separate explicit frontend/backend flags; see README.md. No medical accuracy or clinical validation is claimed.
 
 ## العربية
 
-١. اختر **جرّب المحاكاة**. يبدأ العرض بالتقاط مُحاكى دون حساب أو صورة أو خادم خلفي.
+١. اختر **جرّب العرض التفاعلي** وابدأ بالتحضير. إذا وُجد تقدم محفوظ، اختر **استكمال العرض السابق** أو **بدء عرض جديد**؛ لا يؤدي تحميل الصفحة إلى حذفه بصمت. لا حاجة إلى حساب أو صورة أو خادم خلفي.
 
 ٢. تابع التحضير الخيالي واختر العين ووسّط مؤشر المحاذاة ثم اختر **محاكاة التصوير**. لا تلتقط الحركة صورة ولا تقيس محاذاة الشبكية.
 
-٣. اختر **الانتقال إلى اختيار السيناريو**. يحمل الرسم الأصلي للشبكية توضيح **صورة توضيحية — لم تُلتقط ولم تُحلل**؛ ولا يحدد النتيجة. اختر سيناريو خياليًا محددًا مسبقًا: لم تُعلّم سمة، أو سمة خيالية معلّمة لمراجعة المختص، أو التقييم غير متاح. لا تُستنتج نتيجة من صورة.
+٣. اختر **الانتقال إلى اختيار المثال**. يحمل الرسم الأصلي للشبكية توضيح **صورة توضيحية — لم تلتقطها النظارة ولا تُحلَّل في العرض.** اختر **مثال: لا توجد علامات محددة للمراجعة** أو **مثال: علامة تستدعي مراجعة المختص** أو **مثال: تعذّر التقييم**.
 
-٤. اختر **عرض تقرير المحاكاة**. تظهر النتيجة المحددة مسبقًا في الأعلى، يليها شرحها الخاص وبيانات الحالة والعين والتاريخ والسيناريو والخطوة التالية التوضيحية. يجمع قسم مختصر الحدود: لا تصوير أو تحليل، ولا فحوص تقنية أو تقييم موثوق لجودة الشبكية، والاستدلال معطّل. لا يقدّم سيناريو تعذّر التقييم نتيجة أو طمأنة؛ ويتيح **إعادة محاولة الالتقاط المُحاكى** مع الاحتفاظ بالعين.
+٤. اختر **عرض تقرير المحاكاة**. يظهر المثال المحدد مسبقًا في الأعلى، يليه شرحه وبيانات الحالة والعين والتاريخ والسيناريو والخطوة التالية التوضيحية. توضح الشاشة والطباعة أنه ليس نتيجة فحص، وأنه لم تُلتقط صورة أو تُحلل. يتيح مثال تعذّر التقييم **إعادة تجربة المحاكاة** مع الاحتفاظ بالعين.
 
-٥. اطبع التقرير أو احفظه PDF بأي من اللغتين، أو اختر **تغيير السيناريو**. تتيح أزرار المراحل والسابق العودة؛ ويتطلب التقرير إكمال الالتقاط المُحاكى واختيار السيناريو. يستعيد التحديث السيناريو والعين والتقرير، بما فيها السجلات الرقمية القديمة. تمسح إعادة المحاكاة السيناريو وحالة الاكتمال دون المساس بسجلات البحث المحلي.
+٥. اطبع التقرير أو احفظه PDF بأي من اللغتين، أو اختر **تغيير المثال**. تتيح أزرار المراحل والسابق العودة. عند التحديث، اختر صراحةً استكمال المثال والعين والتقرير المحفوظ أو بدء عرض جديد. لا يُمسح التقدم السابق إلا بعد اختيار البدء من جديد. لا تتأثر سجلات البحث المحلي.
 
-٦. تحافظ صفحة البحث على النتيجة الفعلية: صُنّفت الصور الشبكية الخمس ضمن الفئة صفر بما فيها صورتا مجموعة الاعتلال السكري من HRF. النتائج التوضيحية غير مرتبطة بتلك التنبؤات.
+٦. تقدم صفحة **التقدم والمصادر** ملخصًا للزائر. نتائج تجارب النموذج والبيانات الأصلية محفوظة في التوثيق التقني المفهرس في RESEARCH.md، ولا تولّد أمثلة العرض المحددة مسبقًا.
 
 لا يرفع العرض العام صورًا أو يرسل طلبات فحص أو استدلال. يتطلب البحث المحلي تفعيل وضعي الواجهة والخادم صراحةً. لا ندّعي دقة طبية أو تحققًا سريريًا.

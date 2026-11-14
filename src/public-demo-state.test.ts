@@ -1,8 +1,14 @@
 import {describe,it,expect} from 'vitest';
-import {captureEvent,freshDemo,openDemoReport,restoreDemo,scenarioId,SCENARIOS} from './public-demo-state';
+import {captureEvent,freshDemo,openDemoReport,restoreDemo,savedDemo,scenarioId,SCENARIOS} from './public-demo-state';
 import {demoCopy} from './demo-copy';
 
 describe('public simulation report selection and restoration',()=>{
+ it('distinguishes missing, resumable and corrupted progress without replacing the supplied data',()=>{
+  expect(savedDemo(null)).toMatchObject({exists:false,canResume:false});
+  const raw=JSON.stringify(openDemoReport({...captureEvent(freshDemo(),{type:'simulation-complete'}),scenario:'flagged'}));
+  expect(savedDemo(raw)).toMatchObject({exists:true,canResume:true,state:{stage:'report',scenario:'flagged'}});
+  expect(savedDemo('{broken')).toMatchObject({exists:true,canResume:false});
+ });
  it('migrates saved numeric scenarios to stable IDs without swapping outcomes',()=>{
   for(const [index,id] of SCENARIOS.entries()){
    const c=captureEvent(freshDemo(),{type:'simulation-complete'}).c;
