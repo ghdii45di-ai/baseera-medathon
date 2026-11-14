@@ -24,3 +24,11 @@ Final local/live verification and publication are appended after completion belo
 - Public production and separate explicit local-research builds succeed. No medical inference experiment was run for this update.
 - Twelve PDFs (three examples × two eyes × two languages) each fit one A4 page. The required disclosure remains visible. Representative English/Arabic pages and homepage/capture/progress/entry layouts were rendered and visually inspected. Other browser/printer combinations remain outside the acceptance scope.
 - The original retinal result/input records, provenance, evaluation documents and backend code are unchanged. No weights, research photographs, environment files or private deployment data are staged.
+
+## Verified production publication
+
+Implementation commit 897b01a was published on the existing Baseera Hobby project as deployment dpl_6nijwwmUdqgw27jLrKtxMXNhxRg8. The public URL remains https://baseera-five.vercel.app/. Only six prebuilt static-output files were uploaded; no model, function, research photograph, secret or private workspace file was deployed.
+
+All ten browser tests passed again on the actual HTTPS alias (1.4 minutes), including the bilingual homepage text/four-step labels, Progress & sources, mobile menu, saved-progress choices, scenario reports, both eyes, keyboard focus, restart/retry, restored state and print export. The deployed HTML/JS/CSS/concept image/disabled-API JSON match the tested build byte for byte. Public routes return 200; inference returns 403 and private model/data/environment paths return 404.
+
+The existing draft PR #1 is updated on fix/simulation-reports; main is not overwritten or merged. Hosting connection/settings, repository privacy and the public URL are unchanged. No paid resource was created. No deployment blocker remains; acceptance is scoped to the installed Chrome browser and generated A4 PDFs, not every browser/printer combination.
