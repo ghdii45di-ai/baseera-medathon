@@ -1,5 +1,7 @@
 # Baseera | بصيرة — MEDATHON 2026
 
+**Team code / ??? ??????: MED-P4LJHS**
+
 الموقع المنشور / Live demo: **https://baseera-five.vercel.app/**
 
 النسخة العامة **محاكاة تفاعلية باللغتين العربية والإنجليزية**، تتضمن التقاطًا مُحاكى وسيناريوهات خيالية محددة مسبقًا. لا ترفع صورًا، ولا تفحصها، ولا تشغّل نموذجًا للاستدلال الطبي. توضح التقارير مصدر النتائج وحدودها. لا ندّعي دقة طبية أو تحققًا سريريًا. رفع الصور والفحوص التقنية مقتصران على البحث المحلي المنفصل.
@@ -46,7 +48,7 @@ To install/test the basic backend without TensorFlow:
 python -m venv .venv
 .\.venv\Scripts\python -m pip install -r backend/requirements.txt
 .\.venv\Scripts\python -m uvicorn backend.main:app --host 127.0.0.1 --port 8010
-# Run after npm run build:
+# In another terminal, after npm run build:
 .\.venv\Scripts\python -m pytest backend -q
 ```
 
@@ -79,12 +81,20 @@ Five real retinal photographs were each tested twice: **all predictions were cla
 
 The glasses, optics, illumination and device transfer remain conceptual. The public simulation never substitutes predefined outcomes for genuine inference. The earlier experimental work and evaluation evidence remain separate from the public workflow.
 
+## Current functionality and future work
+
+Available now: Arabic/English navigation, simulated capture, three distinct predefined scenarios, eye selection, saved progress, and labelled printable simulation reports. Public real-image capture, uploads, technical image checks, retinal-quality assessment and AI inference are **not enabled**.
+
+Future work starts with development and validation in clinics under specialist supervision, with necessary safety reviews and approvals. Validated imaging hardware, retinal-quality assessment and independently evaluated inference remain future work. Home use is a later goal, after validation and applicable regulatory authorization.
+
+Submission readiness and audit scope are recorded in [the submission audit](docs/submission-audit-2026-11-14.md). The repository and its README were verified accessible without signing in; the live simulation is also public.
+
 ## Deployment and code review
 
 The existing Vercel production project serves **https://baseera-five.vercel.app/**. The published build was uploaded as static prebuilt output using `deploy/prepare-vercel.mjs`; see [publication record](docs/vercel-publication.md). `vercel.json` contains the existing static SPA routes and API refusal rule. Do not enable research mode or upload workspace/data/model files to the public host. This source update does not change project settings or repository visibility.
 
 At the source-sync check, Vercel was linked to an older v0 source, not this GitHub repository. Pushing here does **not** automatically deploy this project. The current site was published separately through the CLI; the hosting connection has not been changed.
 
-This repository remains private. To let a colleague review it without making it public, the owner can use **GitHub repository → Settings → Collaborators / Manage access → Add people**, invite her GitHub username, and have her accept the invitation. She can review code and propose changes through a branch and Pull Request. No invitation or access change has been made automatically.
+This repository is **Public**, verified by repository metadata and anonymous repository/README requests on 2026-11-14. Anyone can read it and propose changes through a fork and Pull Request. Write access still requires an explicit collaborator invitation. No visibility or collaborator setting was changed by the submission audit.
 
 The repository contains the React frontend, FastAPI backend, tests, pinned dependency files, deployment configuration and evaluation documentation. Local environments, dependencies, generated builds, logs, credentials, model weights and evaluation photographs are deliberately excluded. Diraya is outside this work and remains untouched.

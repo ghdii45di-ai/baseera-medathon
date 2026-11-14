@@ -1,3 +1,5 @@
+> Historical phase record: subsequent publication and merge supersede any pending-deployment or pending-merge statements below. See the [current submission audit](submission-audit-2026-11-14.md). Original verification evidence is preserved.
+
 # Simulation report refinement — 2026-11-14
 
 Started from clean main at a576c0d, identical to origin/main. No AGENTS.md was found in the checkout or checked parent directories. Changes are isolated on fix/simulation-reports; no newer/unrelated work was overwritten. Existing evaluation records, model weights, local research configuration, disabled-public-inference policy and clinic-to-home development wording are preserved. Diraya is untouched.

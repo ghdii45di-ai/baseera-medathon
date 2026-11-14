@@ -1,20 +1,29 @@
-> Publication update: the static simulation is live at https://baseera-five.vercel.app/. See vercel-publication.md for the actual deployment record. The preparation notes below are retained as historical guidance, not current deployment status.
+# Public simulation deployment
 
-# Publish the simulation — prepared, not published
+The simulation is live at **https://baseera-five.vercel.app/** in the existing Baseera Vercel project. The production implementation was merged into `main` as `bfb9ff3243465ea4b12906772d70659b216b2c3e`. See the [publication record](vercel-publication.md) and [submission audit](submission-audit-2026-11-14.md).
 
-The simplest path is the existing Vite frontend as a **static dist/ upload**, with no backend or model. No existing host account/project configuration or public URL was found in this checkout. Reuse your frontend host if you already have one, setting build command `npm run build`, publish directory `dist`, and `VITE_BASEERA_MODE=simulation`. No server functions, Python, model download, API proxy, evaluation data or paid resources are needed.
+The public build is a static React/Vite application. It has predefined, explicitly labelled fictional outcomes, no image upload or assessment, no model inference and no backend functions. `/api/*` requests are refused. Do not publish research builds, model weights, evaluation photographs, environment files or the workspace.
 
-For a compatible Netlify project, `netlify.toml` sets the build/publish settings and `public/_redirects` is copied into dist. It handles `/api/*` first with a disabled response (404), then falls back to `index.html` for browser routes. See [Netlify routing documentation](https://docs.netlify.com/manage/routing/redirects/overview/) and [status/force options](https://docs.netlify.com/manage/routing/redirects/redirect-options/). These are prepared files, not evidence that a hosted deployment has been tested.
+## Existing production path
 
-Remaining publication steps:
+The existing project was published using static prebuilt output, not automatic deployment from this GitHub repository. At the last hosting check, its Git connection still referenced the older v0 source. A GitHub push alone does not update production. Do not change that connection or deployment settings as part of submission cleanup.
 
-1. Select the existing frontend project/host (or authorize a no-cost static host). Confirm no paid plan, add-on or billable resource will be enabled.
-2. Build from this checkout with `npm ci` and `npm run build`, using simulation configuration. Upload ONLY `dist/`, or connect the repository only after push authorization. Do not upload the workspace, `dist-research/`, backend, weights, data or local environment.
-3. Configure SPA fallback and ensure `/api/*` has no research proxy/function. The supplied Netlify rules do that for its routing format; other hosts need equivalent settings. Remove any inherited API proxies or research environment variables in the selected host.
-4. Publish when authorized, then verify the resulting HTTPS URL, direct `/app/start` and `/research` refreshes, English/Arabic, mobile layout, all three predefined scenarios, report export and an unsuccessful API request. Confirm browser network activity contains no inference/image-upload requests.
+For a separately authorized future publication, using the existing free project and authenticated CLI:
 
-The site is ready for a static-host publication check after authorization. No public URL exists yet. No deployment, push, repository visibility change or resource creation was performed. Target-host routing and public PDF/browser acceptance remain to be verified on that actual URL.
+```powershell
+npm ci
+npm test
+npm run build
+node deploy/prepare-vercel.mjs
+npx --yes vercel@65.16.0 deploy --prebuilt --prod --scope ghadi132px-8298s-projects --yes --archive=tgz
+```
 
-The optional root Dockerfile now uses the disabled backend configuration and does not install TensorFlow/download weights. A container is unnecessary for this static demo; actual container build is still unverified because Docker/Podman/WSL are unavailable. The former model-enabled container is retained separately as `deploy/Dockerfile.research` for local research only, with its earlier unresolved license/data-lineage/container issues documented in `research-deployment-history.md`. Those issues are not prerequisites for publishing a simulation that distributes no model or evaluation data.
+The preparation script packages the static public build; inspect its output before publishing. Retain the existing simulation defaults and `vercel.json` SPA/API rules. Verify HTTPS, direct `/app/start` and `/research` routes, both languages, all scenarios, mobile and printed reports, and refused API requests after any publication. Never set research flags on the public host.
 
-Local research requires `BASEERA_MODE=research` plus the explicit research frontend mode, bound to loopback. Never set those flags on the public host. The public API does not silently substitute predefined results: simulation results are selected and labelled entirely in the browser, and real inference endpoints reject requests in the public backend configuration.
+The Netlify files are an unused alternative static-host configuration, not the current deployment. No new host, paid resource or visibility change is required for the current demo.
+
+## Separate local research
+
+The optional root Dockerfile uses the disabled backend configuration. The simulation needs no container. A container build remains unverified because Docker/Podman/WSL were unavailable during the recorded verification. `deploy/Dockerfile.research` is experimental and local only; its license/data-lineage and container limitations remain in [the research deployment history](research-deployment-history.md). They do not establish medical accuracy or clinical readiness.
+
+Research requires explicit frontend and backend opt-in on loopback. Public outcomes are selected and labelled in the browser; failed research inference is never silently replaced with a simulated result.

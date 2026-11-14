@@ -1,28 +1,43 @@
+# Dependencies and isolated environments
 node_modules/
-dist/
 .venv/
-.venv-model/
-*.keras
-*.h5
+.venv-*/
+venv/
+env/
+
+# Generated builds, hosting state and test output
+dist/
+dist-research/
+.vercel/
+playwright-report/
+test-results/
+*.tsbuildinfo
 __pycache__/
 .pytest_cache/
-.env
-.env.*
+.mypy_cache/
+.ruff_cache/
+.cache/
+*.py[cod]
+*.log
+logs/
+
+# Local research assets and scratch output
 data/
 weights/
 tmp/
+*.keras
+*.h5
 *.pt
 *.pth
 *.safetensors
 *.zip
 *.csv
-playwright-report/
-test-results/
 local-cases*.json
-*.tsbuildinfo
-dist-research/
-.vercel
 
-# Ignore all real environment files; publish only the sanitized template.
+# Credentials and real environment files; only the sanitized template is public
+*.pem
+*.key
+*.p12
+*.pfx
 .env*
 !.env.example

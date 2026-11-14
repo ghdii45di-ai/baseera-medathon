@@ -73,9 +73,9 @@ Do not run development and production preview on the same port simultaneously. N
 
 ## Research and next actions
 
-See [data provenance](docs/data-provenance.md), [model card](docs/model-card.md), [evaluation](docs/evaluation.md), [prototype status](docs/prototype-status.md), and [demonstration walkthrough](docs/demo-walkthrough.md), [proposed device architecture](docs/device-architecture.md), and [visual provenance](docs/visual-provenance.md).
+See [data provenance](data-provenance.md), [model card](model-card.md), [evaluation](evaluation.md), [prototype status](prototype-status.md), and [demonstration walkthrough](demo-walkthrough.md), [proposed device architecture](device-architecture.md), and [visual provenance](visual-provenance.md).
 
-The current scope and remaining public-demo steps are in [prototype status](docs/prototype-status.md) and [deployment readiness](docs/public-deployment.md). Dockerfile inputs are complete, but an actual container build/run could not be verified because Docker/Podman and WSL are unavailable here. No public demo link exists yet. License-notice/data-lineage review and a decision about the observed disease misses remain publication blockers.
+The current scope and remaining public-demo steps are in [prototype status](prototype-status.md) and [deployment readiness](public-deployment.md). Dockerfile inputs are complete, but an actual container build/run could not be verified because Docker/Podman and WSL are unavailable here. No public demo link exists yet. License-notice/data-lineage review and a decision about the observed disease misses remain publication blockers.
 
 Reproduce the permitted real-image check (images stay ignored and outside public assets):
 

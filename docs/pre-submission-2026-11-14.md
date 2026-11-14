@@ -1,3 +1,5 @@
+> Historical phase record: subsequent publication and merge supersede any pending-deployment or pending-merge statements below. See the [current submission audit](submission-audit-2026-11-14.md). Original verification evidence is preserved.
+
 # Pre-submission clarity and flow update
 
 Work continues on the existing fix/simulation-reports branch and draft PR #1, starting from d6a3b0c after a clean-worktree/remote comparison. No newer work was overwritten and no force push or main-branch replacement is required.
