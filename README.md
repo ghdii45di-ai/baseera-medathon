@@ -32,6 +32,8 @@ npm run test:e2e
 
 Playwright uses installed Google Chrome. The public tests check English/Arabic, all three scenarios, report export, refresh, mobile/desktop layouts, preserved research records, zero browser API requests and disabled inference. `dist/` is generated, not committed. Only static public files are deployed; weights, retinal photographs, research records and backend functions are not part of the site.
 
+Simulation reports lead with a distinct predefined outcome, explanation and illustrative next step. Choose **View simulation report**, **Change scenario**, or (for unavailable assessment) **Retry simulated capture**. The original retinal illustration is explicitly labelled as neither captured nor analyzed. Earlier saved scenario indices migrate to stable scenario IDs; restart no longer restores an old completion flag. See [report refinement verification](docs/report-refinement-2026-11-14.md).
+
 ## Backend and separate local research
 
 Python 3.13 is used for the FastAPI backend. Its default `BASEERA_MODE=simulation` does not load a model and rejects image-check and inference requests. This is independent of the frontend default.
