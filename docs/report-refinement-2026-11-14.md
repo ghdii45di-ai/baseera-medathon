@@ -22,3 +22,7 @@ Navigation uses View simulation report, Change scenario and Continue to scenario
 - Public TypeScript/Vite build and separate explicit local-research build both succeed. No model inference or new medical evaluation was performed for this UI change.
 
 Production publication and verification are recorded separately in vercel-publication.md. No change to repository visibility, Vercel connection/settings, public URL or paid resources is part of this work.
+
+## Verified production publication
+
+Deployment dpl_B455zHxecuWUUTHHSxXsNnHv5J2x completed on the existing Hobby project at https://baseera-five.vercel.app/. All eight browser tests passed against the live HTTPS alias, including all scenarios for both eyes/languages and report exports. The served public files match the tested build byte-for-byte; inference remains HTTP 403, and private asset paths return 404. The public URL, hosting connection, access settings and research findings are unchanged. No deployment blocker remains. Source changes are on fix/simulation-reports for review rather than merged into main.
