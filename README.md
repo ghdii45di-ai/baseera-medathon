@@ -1,4 +1,4 @@
-﻿# Baseera | بصيرة — MEDATHON 2026
+# Baseera | بصيرة — MEDATHON 2026
 
 الموقع المنشور / Live demo: **https://baseera-five.vercel.app/**
 
@@ -31,6 +31,10 @@ npm run test:e2e
 ```
 
 Playwright uses installed Google Chrome. The public tests check English/Arabic, all three scenarios, report export, refresh, mobile/desktop layouts, preserved research records, zero browser API requests and disabled inference. `dist/` is generated, not committed. Only static public files are deployed; weights, retinal photographs, research records and backend functions are not part of the site.
+
+Demo entry starts at the beginning of the journey. If progress is saved, visitors explicitly choose **Resume previous demo** or **Start new demo**; page load does not erase or overwrite the saved record. Capture controls stay with their instructions, and mobile layouts place those instructions before the illustration.
+
+Simulation reports lead with a distinct predefined outcome, explanation and illustrative next step. Choose **View simulation report**, **Change example**, or (for unavailable assessment) **Retry the simulation**. The original retinal illustration is explicitly labelled as neither captured nor analyzed. Earlier saved scenario indices migrate to stable scenario IDs; restart no longer restores an old completion flag. See [report refinement verification](docs/report-refinement-2026-11-14.md) and [the pre-submission changes](docs/pre-submission-2026-11-14.md). Technical model/data evidence is indexed in [docs/RESEARCH.md](docs/RESEARCH.md); the public Progress & sources page is a concise visitor overview.
 
 ## Backend and separate local research
 
